@@ -9,4 +9,4 @@ def image_file():
         tkinter.messagebox.showerror('Upload error','No such file found')
 
 def watermark_image(img):
-    base
+    base=img.convert("RGBA")
