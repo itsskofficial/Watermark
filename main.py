@@ -17,7 +17,7 @@ def image_file():
         img=Image.open(filename)
         image = ImageTk.PhotoImage(file=filename)
         print(image)
-        watermark_page(img)
+        watermark_page(image)
     else:
         messagebox.showerror('Upload error','No such file found')
 
