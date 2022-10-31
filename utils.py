@@ -6,7 +6,7 @@ def image_file():
     file=tkinter.filedialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
         img=file.read()
-        
+        watermark_page(img)
     else:
         tkinter.messagebox.showerror('Upload error','No such file found')
 
