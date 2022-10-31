@@ -9,3 +9,4 @@ def image_file():
         img=file.read()
     else:
         messagebox.showerror('Upload error','No such file found')
+        
