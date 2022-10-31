@@ -9,7 +9,7 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
-        img = Image.open(stream).convert("RGBA")
+        img = Image.open(stream)
         stream.close()
         watermark_page(img)
     else:
