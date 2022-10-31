@@ -8,7 +8,7 @@ def image_file():
     file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
         img_bytes=file.read()
-        stream = BytesIO(LEFT_THUMB)
+        stream = BytesIO(img_bytes)
         image = Image.open(stream).convert("RGBA")
         stream.close()
         image.show()
