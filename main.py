@@ -9,10 +9,10 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
-        img = Image.open(stream).convert("JPEG")
+        img = Image.open(stream).convert("RGBA")
         stream.close()
         print(img)
-        img.save(fp="user_image.jpg")
+        img.save(fp="./")
         watermark_page(img)
         # print(filename)
         # img = ImageTk.PhotoImage(file=rf'{filename}')
