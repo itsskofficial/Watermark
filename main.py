@@ -3,6 +3,7 @@ import tkinter
 from tkinter import NW, messagebox
 from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
+from numpy import rint
 
 def image_file():
     file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
@@ -11,6 +12,7 @@ def image_file():
         stream = BytesIO(img_bytes)
         img = Image.open(stream).convert("RGBA")
         stream.close()
+        print(img)
         watermark_page(img)
     else:
         messagebox.showerror('Upload error','No such file found')
