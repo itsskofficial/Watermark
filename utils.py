@@ -7,4 +7,4 @@ def image_file():
     if file is not None:
         img=file.read()
     else:
-        
+        print()
