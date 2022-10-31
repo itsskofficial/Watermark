@@ -13,6 +13,7 @@ def image_file():
         # stream.close()
         # print(img)
         # watermark_page(img)
+        print(filename)
         img = ImageTk.PhotoImage(file=filename)
         watermark_page(img)
     else:
