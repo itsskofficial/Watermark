@@ -1,4 +1,4 @@
-import tkinter
+from tkinter import *
 
 
 def image_file():
