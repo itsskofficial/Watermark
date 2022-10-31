@@ -17,7 +17,7 @@ def image_file():
         # watermark_page(img)
         print(filename)
         img = Image.open(filename)
-        print(img)
+        
         watermark_page(img)
     else:
         messagebox.showerror('Upload error','No such file found')
