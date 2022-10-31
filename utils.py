@@ -1,6 +1,4 @@
 import tkinter
-from tkinter import filedialog
-from tkinter import messagebox
 
 
 def image_file():
@@ -11,3 +9,4 @@ def image_file():
         tkinter.messagebox.showerror('Upload error','No such file found')
 
 def watermark_image(img):
+    
