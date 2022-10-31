@@ -10,7 +10,6 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
-        print(img)
         watermark_page(stream)
     else:
         messagebox.showerror('Upload error','No such file found')
@@ -24,6 +23,7 @@ def watermark_page(stream):
     button1.destroy()
     canvas2 = tkinter.Canvas(screen, height=300, width=300, bg="black")
     canvas2.place(x=100, y=50)
+    img = Image.open(stream).convert("RGBA")
     resized_img=img.resize((300,300),Image.ANTIALIAS)
     new_img=ImageTk.PhotoImage(image=resized_img)
     print(new_img)
