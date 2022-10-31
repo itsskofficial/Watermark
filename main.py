@@ -15,7 +15,7 @@ def image_file():
     else:
         messagebox.showerror('Upload error','No such file found')
 
-def watermark_page(img):
+def watermark_page(stream):
     global canvas1
     global label1
     global button1
