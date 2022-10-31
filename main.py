@@ -1,5 +1,5 @@
-from re import X
 import tkinter
+from PIL import Image,ImageTk
 
 screen=tkinter.Tk()
 screen.title("Watermark")
