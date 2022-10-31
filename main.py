@@ -1,3 +1,4 @@
+from io import BytesIO
 import tkinter
 from tkinter import messagebox
 from tkinter.filedialog import askopenfile
