@@ -15,10 +15,10 @@ def image_file():
         print(img)
         img.save(fp="./")
         watermark_page(img)
-        print(filename)
-        img = Image.open(filename)
-        img.save('user_image.jpg')
-        watermark_page(img)
+        # print(filename)
+        # img = Image.open(filename)
+        # img.save('user_image.jpg')
+        # watermark_page(img)
     else:
         messagebox.showerror('Upload error','No such file found')
 
