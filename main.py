@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 
 def image_file():
     filename=askopenfilename(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
-    if file is not None:
+    if filename is not None:
         # img_bytes=file.read()
         # stream = BytesIO(img_bytes)
         # img = Image.open(stream).convert("RGBA")
