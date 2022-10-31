@@ -7,7 +7,7 @@ def image_file():
     file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
         img=file.read()
-        img.save('user_image.jpg')
+        img.show()
     else:
         messagebox.showerror('Upload error','No such file found')
 
