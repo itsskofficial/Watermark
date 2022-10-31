@@ -6,8 +6,8 @@ from PIL import Image, ImageTk
 def image_file():
     file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
-        img=file.read()
-        print(img)
+        img_bytes=file.read()
+        
     else:
         messagebox.showerror('Upload error','No such file found')
 
