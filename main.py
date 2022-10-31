@@ -1,3 +1,4 @@
+from fileinput import filename
 from io import BytesIO
 import tkinter
 from tkinter import NW, messagebox
@@ -15,7 +16,7 @@ def image_file():
         # img.save(fp="./")
         # watermark_page(img)
         print(filename)
-        img = ImageTk.PhotoImage(file=rf'{filename}')
+        img = Image.open(filename)
         print(img)
         watermark_page(img)
     else:
