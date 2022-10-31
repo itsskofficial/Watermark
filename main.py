@@ -12,7 +12,7 @@ def image_file():
         img = Image.open(stream).convert("RGBA")
         stream.close()
         image=ImageTk.PhotoImage(image=img)
-        
+
     else:
         messagebox.showerror('Upload error','No such file found')
 
@@ -36,7 +36,7 @@ def watermark_page(img):
     button.destroy()
     canvas = tkinter.Canvas(screen, height=300, width=300, bg="black")
     canvas.place(x=200, y=50)
-    user_image=ImageTk.PhotoImage(img)
+    
     
 
 screen.mainloop()
