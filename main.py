@@ -10,10 +10,10 @@ def image_file():
         stream = BytesIO(LEFT_THUMB)
 
         image = Image.open(stream).convert("RGBA")
-stream.close()
-image.show()
-        img=Image.open(img_bytes)
-        img.show()
+        stream.close()
+        image.show()
+        # img=Image.open(img_bytes)
+        # img.show()
     else:
         messagebox.showerror('Upload error','No such file found')
 
