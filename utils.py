@@ -3,4 +3,4 @@ from tkinter import filedialog
 
 
 def image_file():
-    file=filedialog.askopenfile(mode="rb")
+    file=filedialog.askopenfile(mode="rb",filetypes=[()])
