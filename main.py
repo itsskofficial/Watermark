@@ -17,6 +17,6 @@ button=tkinter.Button(screen,text="Upload image",command=image_file)
 button.place(x=205,y=250)
 
 def watermark_page(img):
-    
+    canvas.des
 
 screen.mainloop()
