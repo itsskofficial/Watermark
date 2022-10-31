@@ -1,4 +1,5 @@
 import tkinter
+from PIL import *
 
 screen=tkinter.Tk()
 screen.title("Watermark")
