@@ -11,7 +11,7 @@ def image_file():
         stream = BytesIO(img_bytes)
         img = Image.open(stream).convert("RGBA")
         stream.close()
-        img
+        image=ImageTk.PhotoImage(img
         # img=Image.open(img_bytes)
         # img.show()
     else:
