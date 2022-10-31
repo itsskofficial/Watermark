@@ -1,6 +1,6 @@
 import tkinter
 from PIL import Image, ImageTk
-from utils import *
+import utils
 
 screen = tkinter.Tk()
 screen.title("Watermark")
