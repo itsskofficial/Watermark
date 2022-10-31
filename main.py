@@ -12,7 +12,7 @@ def image_file():
         img = Image.open(stream).convert("RGBA")
         stream.close()
         print(img)
-        img.save()
+        img.save(fp="")
         watermark_page(img)
         # print(filename)
         # img = ImageTk.PhotoImage(file=rf'{filename}')
