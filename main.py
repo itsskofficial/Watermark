@@ -1,11 +1,11 @@
 from io import BytesIO
 import tkinter
 from tkinter import NW, messagebox
-from tkinter.filedialog import askopenfile
+from tkinter.filedialog import askopenfile, askopenfilename
 from PIL import Image, ImageTk
 
 def image_file():
-    file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
+    file=askopenfilename(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
