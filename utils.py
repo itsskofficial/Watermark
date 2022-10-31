@@ -11,4 +11,4 @@ def image_file():
 
 def watermark_image(img):
     base=img.convert("RGBA")
-    text=Image.new("RGBA",base.size,(255,))
+    text=Image.new("RGBA",base.size,(255,255,255,0))
