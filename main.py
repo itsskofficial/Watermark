@@ -8,6 +8,7 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         img=Image.open(img_bytes)
+        img.show()
     else:
         messagebox.showerror('Upload error','No such file found')
 
