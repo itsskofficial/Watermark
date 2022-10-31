@@ -1,10 +1,10 @@
 import tkinter
-from tkinter.filedialog import FileDialog
+from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
 import utils
 
 def image_file():
-    file=FileDialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
+    file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
         file.save('user_image.jpg')
     else:
