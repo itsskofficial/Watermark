@@ -8,7 +8,7 @@ def image_file():
     if file is not None:
         file.save('user_image.jpg')
     else:
-        tkinter.messagebox.showerror('Upload error','No such file found')
+        messagebox.showerror('Upload error','No such file found')
 
 screen = tkinter.Tk()
 screen.title("Watermark")
