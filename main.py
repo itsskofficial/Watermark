@@ -4,7 +4,7 @@ from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
 
 def image_file():
-    file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
+    file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
         img=file.read()
         print(img)
