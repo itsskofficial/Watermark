@@ -1,7 +1,7 @@
 import tkinter
 
 screen=tkinter.Tk()
-screen.
+screen.geometry("300x400")
 label=tkinter.Label(screen,text="Hello")
 label.grid(row=0,column=0)
 screen.mainloop()
