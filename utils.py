@@ -10,4 +10,5 @@ def image_file():
     else:
         messagebox.showerror('Upload error','No such file found')
 
-def watermark_img(im)
+def watermark_image(img):
+    
