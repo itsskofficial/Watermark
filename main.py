@@ -1,6 +1,6 @@
 from io import BytesIO
 import tkinter
-from tkinter import messagebox
+from tkinter import NW, messagebox
 from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
 
@@ -36,7 +36,7 @@ def watermark_page(img):
     button.destroy()
     canvas = tkinter.Canvas(screen, height=300, width=300, bg="black")
     canvas.place(x=200, y=50)
-    canvas.create_image(0,0,image=img)
+    canvas.create_image(0,0,image=img,anchor=NW)
     
 
 screen.mainloop()
