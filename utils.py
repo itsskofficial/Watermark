@@ -1,5 +1,5 @@
 import tkinter
-from PIL import Image,ImageTk
+from PIL import Image,ImageTk,ImageDraw
 
 
 def image_file():
@@ -11,4 +11,4 @@ def image_file():
 
 def watermark_image(img):
     base=img.convert("RGBA")
-    text=image
+    text=Image.new()
