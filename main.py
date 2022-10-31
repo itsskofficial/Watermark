@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import messagebox
 from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
 import utils
