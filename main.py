@@ -2,7 +2,6 @@ import tkinter
 from tkinter import messagebox
 from tkinter.filedialog import askopenfile
 from PIL import Image, ImageTk
-import utils
 
 def image_file():
     file=askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
