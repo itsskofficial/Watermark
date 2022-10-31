@@ -1,6 +1,5 @@
-from tkinter import *
-from tkinter.filedialog import askopenfile
+import tkinter
 
 
 def image_file():
-    file=askopenfile
+    file=tkinter.filedialog.askopenfile()
