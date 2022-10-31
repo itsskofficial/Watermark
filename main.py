@@ -14,15 +14,11 @@ def image_file():
         stream.close()
         print(img)
         img.save(fp="user_image.jpg")
-        watermark_page(img)
-        # print(filename)
-        # img = Image.open(filename)
-        # img.save('user_image.jpg')
-        # watermark_page(img)
+        watermark_page()
     else:
         messagebox.showerror('Upload error','No such file found')
 
-def watermark_page(img):
+def watermark_page():
     global canvas1
     global label1
     global button1
