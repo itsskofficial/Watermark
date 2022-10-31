@@ -16,6 +16,7 @@ def image_file():
         messagebox.showerror('Upload error','No such file found')
 
 def watermark_page(img):
+    global canvas1
     canvas1.destroy()
     label.destroy()
     button.destroy()
@@ -28,8 +29,8 @@ def watermark_page(img):
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
-canvas = tkinter.Canvas(screen, height=100, width=100, bg="black")
-canvas.place(x=200, y=50)
+canvas1 = tkinter.Canvas(screen, height=100, width=100, bg="black")
+canvas1.place(x=200, y=50)
 logo=Image.open("./logo.jpg")
 resized_logo=logo.resize((100,100),Image.ANTIALIAS)
 new_logo=ImageTk.PhotoImage(image=resized_logo)
