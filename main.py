@@ -20,8 +20,8 @@ def watermark_page(img):
     global label1
     global button1
     canvas1.destroy()
-    label.destroy()
-    button.destroy()
+    label1.destroy()
+    button1.destroy()
     canvas = tkinter.Canvas(screen, height=300, width=300, bg="black")
     canvas.place(x=200, y=50)
     resized_img=img.resize((300,300),Image.ANTIALIAS)
