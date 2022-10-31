@@ -1,6 +1,7 @@
 import tkinter
 
 
+
 def image_file():
     file=tkinter.filedialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
@@ -10,3 +11,4 @@ def image_file():
 
 def watermark_image(img):
     base=img.convert("RGBA")
+    text=image
