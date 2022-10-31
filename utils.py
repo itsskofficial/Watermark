@@ -1,5 +1,6 @@
 import tkinter
 from PIL import Image,ImageTk,ImageDraw
+from main import *
 
 
 def image_file():
@@ -11,7 +12,7 @@ def image_file():
         tkinter.messagebox.showerror('Upload error','No such file found')
 
 def watermark_page(img):
-    
+
 
 def watermark_image(img):
     base=img.convert("RGBA")
