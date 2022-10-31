@@ -21,6 +21,6 @@ def watermark_page(img):
     label.destroy()
     button.destroy()
     user_image=ImageTk.PhotoImage(img)
-    
+    user.image
 
 screen.mainloop()
