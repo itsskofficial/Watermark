@@ -1,4 +1,4 @@
-from tkinter.filedialog import askopenfile
+import tkinter
 
 
 def image_file():
