@@ -20,7 +20,8 @@ def watermark_page(img):
     canvas.destroy()
     label.destroy()
     button.destroy()
-    canvs
+    canvas = tkinter.Canvas(screen, height=100, width=100, bg="black")
+    canvas.place(x=200, y=50)
     user_image=ImageTk.PhotoImage(img)
     
 
