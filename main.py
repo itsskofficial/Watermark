@@ -7,17 +7,17 @@ from PIL import Image, ImageTk
 def image_file():
     file=askopenfilename(mode='rb',filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
-        img_bytes=file.read()
-        stream = BytesIO(img_bytes)
-        img = Image.open(stream).convert("RGBA")
-        stream.close()
-        print(img)
-        img.save(fp="./")
-        watermark_page(img)
-        # print(filename)
-        # img = ImageTk.PhotoImage(file=rf'{filename}')
+        # img_bytes=file.read()
+        # stream = BytesIO(img_bytes)
+        # img = Image.open(stream).convert("RGBA")
+        # stream.close()
         # print(img)
+        # img.save(fp="./")
         # watermark_page(img)
+        print(filename)
+        img = ImageTk.PhotoImage(file=rf'{filename}')
+        print(img)
+        watermark_page(img)
     else:
         messagebox.showerror('Upload error','No such file found')
 
