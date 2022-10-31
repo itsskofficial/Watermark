@@ -5,7 +5,7 @@ from tkinter.filedialog import askopenfile, askopenfilename
 from PIL import Image, ImageTk
 
 def image_file():
-    file=askopenfilename(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
+    filename=askopenfilename(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
         # img_bytes=file.read()
         # stream = BytesIO(img_bytes)
