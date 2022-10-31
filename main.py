@@ -11,7 +11,7 @@ def image_file():
         stream = BytesIO(img_bytes)
         img = Image.open(stream).convert("RGBA")
         stream.close()
-        image=ImageTk.PhotoImage(image=img)
+        watermark_page(img)
 
     else:
         messagebox.showerror('Upload error','No such file found')
