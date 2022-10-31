@@ -12,8 +12,6 @@ def image_file():
         img = Image.open(stream).convert("RGBA")
         stream.close()
         image=ImageTk.PhotoImage(image=img)
-        # img=Image.open(img_bytes)
-        # img.show()
     else:
         messagebox.showerror('Upload error','No such file found')
 
