@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import utils
 
 def image_file():
-    file=tkinter.filedialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
+    file=fildia.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
         file.save('user_image.jpg')
     else:
