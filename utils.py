@@ -7,7 +7,7 @@ def image_file():
     file=tkinter.filedialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
     if file is not None:
         img=file.read()
-        save
+        Image.sa
     else:
         tkinter.messagebox.showerror('Upload error','No such file found')
 
