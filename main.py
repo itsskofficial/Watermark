@@ -12,7 +12,6 @@ def image_file():
         stream = BytesIO(img_bytes)
         img = Image.open(stream).convert("RGB")
         stream.close()
-        print(img)
         img.save(fp="user_image.jpg")
         watermark_page()
     else:
