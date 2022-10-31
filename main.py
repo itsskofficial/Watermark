@@ -9,7 +9,7 @@ canvas.place(x=200, y=50)
 logo=Image.open("./logo.jpg")
 resized_logo=logo.resize((100,100),Image.ANTIALIAS)
 new_logo=ImageTk.PhotoImage(image=resized_logo)
-canvas.create_image(10, 10, image=new_logo, anchor=tkinter.NW)
+canvas.create_image(0, 0, image=new_logo, anchor=tkinter.NW)
 label = tkinter.Label(screen, text="Upload your image below")
 label.place(x=185, y=200)
 
