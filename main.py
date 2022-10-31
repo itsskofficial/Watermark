@@ -10,9 +10,8 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
-        stream.close()
         print(img)
-        watermark_page(img)
+        watermark_page(stream)
     else:
         messagebox.showerror('Upload error','No such file found')
 
