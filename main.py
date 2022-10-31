@@ -31,7 +31,7 @@ def watermark_page():
     resized_img=img.resize((300,300),Image.ANTIALIAS)
     new_img=ImageTk.PhotoImage(image=resized_img)
     print(new_img)
-    canvas2.create_image(0,0,image=img,anchor=tkinter.NW)
+    canvas2.create_image(0,0,image=new_img,anchor=tkinter.NW)
 
 screen = tkinter.Tk()
 screen.title("Watermark")
