@@ -14,6 +14,6 @@ canvas.create_image(0, 0, image=new_logo, anchor=tkinter.NW)
 label = tkinter.Label(screen, text="Get your image watermarked", font=('Montserrat bold'))
 label.place(x=185, y=200)
 button=tkinter.Button(screen,text="Upload image",command=image_file)
-button.place(x=)
+button.place(x=200,y=250)
 
 screen.mainloop()
