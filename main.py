@@ -19,6 +19,7 @@ button.place(x=205,y=250)
 def watermark_page(img):
     canvas.destroy()
     label.destroy()
+    button.destroy()
     
 
 screen.mainloop()
