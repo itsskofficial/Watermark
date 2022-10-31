@@ -17,6 +17,8 @@ def image_file():
 
 def watermark_page(img):
     global canvas1
+    global label1
+    global button1
     canvas1.destroy()
     label.destroy()
     button.destroy()
