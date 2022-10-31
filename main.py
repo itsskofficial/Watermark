@@ -11,7 +11,7 @@ logo=Image.open("./logo.jpg")
 resized_logo=logo.resize((100,100),Image.ANTIALIAS)
 new_logo=ImageTk.PhotoImage(image=resized_logo)
 canvas.create_image(0, 0, image=new_logo, anchor=tkinter.NW)
-label = tkinter.Label(screen, text="Get your image watermarked", font=())
+label = tkinter.Label(screen, text="Get your image watermarked", font=('Montserrat ))
 label.place(x=185, y=200)
 
 button=tkinter.Button(screen,text="Upload image",command=image_file)
