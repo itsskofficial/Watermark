@@ -11,7 +11,7 @@ def image_file():
         stream = BytesIO(img_bytes)
         image = Image.open(stream).convert("RGBA")
         stream.close()
-        image.show()
+        image
         # img=Image.open(img_bytes)
         # img.show()
     else:
