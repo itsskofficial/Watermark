@@ -20,6 +20,7 @@ def watermark_page(img):
     canvas.destroy()
     label.destroy()
     button.destroy()
+    canvs
     user_image=ImageTk.PhotoImage(img)
     
 
