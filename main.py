@@ -9,7 +9,6 @@ def image_file():
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(LEFT_THUMB)
-
         image = Image.open(stream).convert("RGBA")
         stream.close()
         image.show()
