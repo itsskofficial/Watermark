@@ -16,7 +16,7 @@ def image_file():
         messagebox.showerror('Upload error','No such file found')
 
 def watermark_page(img):
-    canvas.destroy()
+    canvas1.destroy()
     label.destroy()
     button.destroy()
     canvas = tkinter.Canvas(screen, height=300, width=300, bg="black")
