@@ -10,6 +10,8 @@ def image_file():
         tkinter.messagebox.showerror('Upload error','No such file found')
     watermark_page(img)
 
+def watermark_page()
+
 def watermark_image(img):
     base=img.convert("RGBA")
     text=Image.new("RGBA",base.size,(255,255,255,0))
