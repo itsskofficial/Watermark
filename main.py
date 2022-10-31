@@ -12,7 +12,6 @@ def image_file():
         img = Image.open(stream).convert("RGBA")
         stream.close()
         watermark_page(img)
-
     else:
         messagebox.showerror('Upload error','No such file found')
 
