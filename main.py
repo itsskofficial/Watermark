@@ -6,14 +6,14 @@ from tkinter.filedialog import askopenfile, askopenfilename
 from PIL import Image, ImageTk
 
 def image_file():
-    file=askopenfilename(mode='rb',filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
+    file=askopenfile(mode='rb',filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
     if file is not None:
         img_bytes=file.read()
         stream = BytesIO(img_bytes)
         img = Image.open(stream).convert("RGB")
         stream.close()
         print(img)
-        img.save(fp="./")
+        img.save(fp="user_image.jpg")
         watermark_page(img)
         # print(filename)
         # img = Image.open(filename)
