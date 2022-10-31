@@ -14,6 +14,7 @@ def image_file():
         # print(img)
         # watermark_page(img)
         print(filename)
+        
         img = ImageTk.PhotoImage(file=filename)
         print(img)
         watermark_page(img)
