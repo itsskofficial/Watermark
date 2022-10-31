@@ -2,6 +2,13 @@ import tkinter
 from PIL import Image, ImageTk
 import utils
 
+def image_file():
+    file=tkinter.filedialog.askopenfile(mode="rb",filetypes=[('JPG File', '*.jpg'),('PNG File','*./png')])
+    if file is not None:
+        file.save('user_image.jpg')
+    else:
+        tkinter.messagebox.showerror('Upload error','No such file found')
+
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
@@ -13,7 +20,7 @@ new_logo=ImageTk.PhotoImage(image=resized_logo)
 canvas.create_image(0, 0, image=new_logo, anchor=tkinter.NW)
 label = tkinter.Label(screen, text="Get your image watermarked", font=('Montserrat 10 bold'))
 label.place(x=155, y=200)
-button=tkinter.Button(screen,text="Upload image",command=utils.image_file())
+button=tkinter.Button(screen,text="Upload image",command=image_file())
 button.place(x=205,y=250)
 
 def watermark_page(img):
