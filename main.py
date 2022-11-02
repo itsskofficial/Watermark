@@ -33,6 +33,14 @@ def watermark_page():
     print(new_img)
     canvas2.create_image(0,0,image=new_img,anchor=tkinter.NW)
 
+def watermark_image(img):
+    base=img.convert("RGBA")
+    text=Image.new("RGBA",base.size,(255,255,255,0))
+    d=ImageDraw.Draw(text)
+    d.text((0,0),"SK",font="Arial",fill=(255,255,255,128))
+    out=Image.alpha_composite(base,text)
+    return out
+
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
