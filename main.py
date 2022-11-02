@@ -35,13 +35,14 @@ def watermark_page():
     button2=tkinter.Button(screen,text="Watermark image",command=watermark_image)
     button2.place(x=200,y=400)
 
-def watermark_image(img):
+def watermark_image():
     img=Image.open("resizedimage.jpg")
     base=img.convert("RGBA")
     text=Image.new("RGBA",base.size,(255,255,255,0))
     d=ImageDraw.Draw(text)
     d.text((0,0),"SK",font="Arial",fill=(255,255,255,128))
     out=Image.alpha_composite(base,text)
+    out.show()
     
 screen = tkinter.Tk()
 screen.title("Watermark")
