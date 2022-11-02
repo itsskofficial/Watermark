@@ -1,4 +1,3 @@
-from curses import BUTTON2_CLICKED
 from io import BytesIO
 import tkinter
 from tkinter import NW, messagebox
