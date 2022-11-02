@@ -22,6 +22,7 @@ def watermark_page():
     global label1
     global button1
     global button2
+    global canvas2
     canvas1.destroy()
     label1.destroy()
     button1.destroy()
