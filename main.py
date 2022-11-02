@@ -32,7 +32,7 @@ def watermark_page():
     print(new_img)
     resized_img.save(fp='resizedimage.jpg')
     screen.new_img=new_img
-    canvas2.create_image(0,0,image=new_img)
+    canvas2.create_image((0,0),image=new_img)
     button2=tkinter.Button(screen,text="Watermark image",command=watermark_image)
     button2.place(x=200,y=400)
 
