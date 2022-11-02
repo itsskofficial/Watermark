@@ -1,3 +1,4 @@
+from curses import BUTTON2_CLICKED
 from io import BytesIO
 import tkinter
 from tkinter import NW, messagebox
@@ -48,7 +49,8 @@ def watermark_image():
     final_page()
 
 def final_page():
-    glo
+    global canvas2
+    global button2
     
 screen = tkinter.Tk()
 screen.title("Watermark")
