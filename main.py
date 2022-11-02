@@ -58,7 +58,7 @@ def final_page():
     button2.destroy()
     img=Image.open('finalimage.jpg')
     final_img=ImageTk.PhotoImage(image=final_img)
-    canvas2.itemconfig(image_on_canvas,image=)
+    canvas2.itemconfig(image_on_canvas,image=final_img)
     
 screen = tkinter.Tk()
 screen.title("Watermark")
