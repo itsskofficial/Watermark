@@ -60,6 +60,7 @@ def final_page():
     final_img=ImageTk.PhotoImage(image=img)
     screen.final_img=final_img
     canvas2.itemconfig(image_on_canvas,image=final_img)
+    button3=
     
 screen = tkinter.Tk()
 screen.title("Watermark")
