@@ -1,9 +1,8 @@
-from fileinput import filename
 from io import BytesIO
 import tkinter
 from tkinter import NW, messagebox
 from tkinter.filedialog import askopenfile, askopenfilename
-from PIL import Image, ImageTk,ImageDraw
+from PIL import Image, ImageTk, ImageDraw
 
 def image_file():
     file=askopenfile(mode='rb',filetypes=[('JPG File', '*.jpg'),('PNG File','*.png')])
