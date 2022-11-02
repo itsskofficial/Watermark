@@ -46,6 +46,9 @@ def watermark_image():
     out=Image.alpha_composite(base,text)
     out.save(fp='finalimage.jpg')
     final_page()
+
+def final_page():
+    glo
     
 screen = tkinter.Tk()
 screen.title("Watermark")
