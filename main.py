@@ -53,6 +53,8 @@ def watermark_image():
 def final_page():
     global canvas2
     global button2
+    button2.destroy()
+    
     
 screen = tkinter.Tk()
 screen.title("Watermark")
