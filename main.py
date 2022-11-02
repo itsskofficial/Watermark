@@ -63,7 +63,7 @@ def final_page():
 
 def download_image():
     img=Image.open('finalimage.jpg')
-    img.save(fp=)
+    img.save(fp=r"C://")
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
