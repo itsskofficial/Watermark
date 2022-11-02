@@ -64,7 +64,7 @@ def final_page():
 def download_image():
     img=Image.open('finalimage.jpg')
     img.save(fp=r"C:/Users/sarth/Downloads/watermarked_image.jpg")
-    img.show()
+    screen.quit()
     
 screen = tkinter.Tk()
 screen.title("Watermark")
