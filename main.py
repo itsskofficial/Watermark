@@ -31,7 +31,7 @@ def watermark_page():
     new_img=ImageTk.PhotoImage(image=resized_img)
     print(new_img)
     canvas2.create_image(0,0,image=new_img,anchor=tkinter.NW)
-    button2=tkinter.Button(screen,)
+    button2=tkinter.Button(screen,text="Watermark image",command=watermark_image)
 
 def watermark_image(img):
     base=img.convert("RGBA")
