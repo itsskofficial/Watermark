@@ -55,12 +55,11 @@ def final_page():
     global canvas2
     global button2
     global image_on_canvas
-    button2.destroy()
     img=Image.open('finalimage.jpg')
     final_img=ImageTk.PhotoImage(image=img)
     screen.final_img=final_img
     canvas2.itemconfig(image_on_canvas,image=final_img)
-    button3=
+    button2.
     
 screen = tkinter.Tk()
 screen.title("Watermark")
