@@ -41,7 +41,7 @@ def watermark_image():
     base=img.convert("RGBA")
     text=Image.new("RGBA",base.size,(255,255,255,0))
     d=ImageDraw.Draw(text)
-    fnt = ImageFont.truetype("Pillow/Tests/fonts/FreeMono.ttf", 40)
+    fnt = ImageFont.truetype("arial.ttf", 40)
     d.text((0,0),"SK",font=fnt, fill=(255,255,255,128))
     out=Image.alpha_composite(base,text)
     out.show()
