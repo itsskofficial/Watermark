@@ -47,6 +47,7 @@ def watermark_image():
     fnt = ImageFont.truetype("arial.ttf", 40)
     d.text((0,0),"SK",font=fnt, fill=(255,255,255,128))
     out=Image.alpha_composite(base,text)
+    
     out.save(fp='finalimage.jpg')
     final_page()
 
