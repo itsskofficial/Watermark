@@ -39,7 +39,7 @@ def watermark_image(img):
     d=ImageDraw.Draw(text)
     d.text((0,0),"SK",font="Arial",fill=(255,255,255,128))
     out=Image.alpha_composite(base,text)
-    return out
+    
 
 screen = tkinter.Tk()
 screen.title("Watermark")
