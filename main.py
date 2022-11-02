@@ -54,7 +54,8 @@ def final_page():
     global canvas2
     global button2
     button2.destroy()
-    final_img=Image.open('')
+    final_img=Image.open('finalimage.jpg')
+    
     canvas2.config(image=)
     
 screen = tkinter.Tk()
