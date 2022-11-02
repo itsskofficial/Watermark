@@ -59,7 +59,7 @@ def final_page():
     final_img=ImageTk.PhotoImage(image=img)
     screen.final_img=final_img
     canvas2.itemconfig(image_on_canvas,image=final_img)
-    button2.config(text=)
+    button2.config(text="Download image", command)
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
