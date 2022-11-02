@@ -62,7 +62,7 @@ def final_page():
     button2.config(text="Download image", command=download_image)
 
 def download_image():
-    
+    img=Image.open('/')
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
