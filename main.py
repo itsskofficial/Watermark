@@ -43,7 +43,6 @@ def watermark_image(img):
     d.text((0,0),"SK",font="Arial",fill=(255,255,255,128))
     out=Image.alpha_composite(base,text)
     
-
 screen = tkinter.Tk()
 screen.title("Watermark")
 screen.geometry("500x500")
