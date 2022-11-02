@@ -54,6 +54,7 @@ def watermark_image():
 def final_page():
     global canvas2
     global button2
+    global image_on_canvas
     button2.destroy()
     img=Image.open('finalimage.jpg')
     final_img=ImageTk.PhotoImage(image=final_img)
